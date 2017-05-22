@@ -136,6 +136,7 @@ router.use('/wxpay/notify', wxpay.useWXCallback(function(msg, req, res, next){
 }));
 ```
 
+```js
 wxpay.transfer({
 	partner_trade_no: '3123123123', // 订单号
 	openid: 'openid',
@@ -146,3 +147,4 @@ wxpay.transfer({
 }, function(err, result){
 	console.log('transfer', arguments);
 });
+```
